@@ -5,16 +5,18 @@
 The goal of this project is to use NextJs capabilities and its paradigms by
 creating a Movie app. This app should be able to list and show Movies.
 
-The main purpose for this app is to show my front-end skills to the development team of Club Feast, whom I feel grateful for the chance to participate solving this task
+The main purpose for this app is to show my front-end skills to the development team of Club Feast, whom I feel grateful for the chance to participate in solving this task
 
 ## USAGE
 
 This website is constituted by five pages
 
-- **/** (home): The home view shows a list of the movies that are currently in theatres.
+- **/** (home): The home view shows a list of the movies that are currently in theaters.
 - **/popular**: View showing the most popular movies in the database
 - **/top-rated**: View showing a list of movies ordered by rating.
 - **/upcoming**: View showing a list of movies that are being released soon.
+- **/movie/:movie_id**: This page mainly has details about the selected movie. This page also has a list of the movie credits
+
 
 ## INSTALLATION
 
@@ -32,7 +34,7 @@ git clone https://github.com/JosueCuevas/the-movie-db.git
 npm install
 ```
 
-1. This project consumes an API from The Movie DB which is a database where we can find the definitive list of currently available methods for movies, tv shows, actors and images, so you will need some credentials in order to make this app working well. Create a `.env` at the root of the project and write this environment variables
+1. This project consumes an API from The Movie DB which is a database where we can find the definitive list of currently available methods for movies, TV shows, actors and images, so you will need some credentials in order to make this app working well. Create a `.env` at the root of the project and write this environment variables
 
 ```.env
 API_KEY=4f298a53e552283bee957836a529baec
