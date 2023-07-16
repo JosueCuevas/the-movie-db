@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Movie DB | Front-End Task
 
-## Getting Started
+## BACKGROUND
 
-First, run the development server:
+The goal of this project is to use NextJs capabilities and its paradigms by
+creating a Movie app. This app should be able to list and show Movies.
+
+The main purpose for this app is to show my front-end skills to the development team of Club Feast, whom I feel grateful for the chance to participate solving this task
+
+## USAGE
+
+This website is constituted by five pages
+
+- **/** (home): The home view shows a list of the movies that are currently in theatres.
+- **/popular**: View showing the most popular movies in the database
+- **/top-rated**: View showing a list of movies ordered by rating.
+- **/upcoming**: View showing a list of movies that are being released soon.
+
+## INSTALLATION
+
+You can install this app following the next steps:
+
+1. Clone the project from GitHub
+
+```bash
+git clone https://github.com/JosueCuevas/the-movie-db.git
+```
+
+2. Once the project has downloaded in your local, install the dependencies
+
+```bash
+npm install
+```
+
+1. This project consumes an API from The Movie DB which is a database where we can find the definitive list of currently available methods for movies, tv shows, actors and images, so you will need some credentials in order to make this app working well. Create a `.env` at the root of the project and write this environment variables
+
+```.env
+API_KEY=4f298a53e552283bee957836a529baec
+```
+
+4. Once the dependencies have installed and the environment variables have set, you can run the app in your local running the next command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Visit the `http://localhost:3000` in your browser to see the project working
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## STACK USED
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project was built using **Next.js**, **Typescript** and **TailwindCSS**, which is the stack proposed for this task
 
-## Learn More
+I tried to make the design as close as possible to the provided designs in the PDF file for this task, adding responsiveness and functionality
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Finally, I want to say thank you for the opportunity to show my skill set to the Technical Team of Club Feast

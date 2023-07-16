@@ -14,14 +14,14 @@ const getMovies = async ({ list }: Props): Promise<Welcome | never> => {
     });
 
     if (!res.ok) {
-      throw new Error("Failed to fetch now playing movies");
+      throw new Error("Failed to fetch movies");
     }
 
     const movies: Welcome = await res.json();
     return movies;
   } catch (error) {
     console.error(error);
-    throw new Error("Failed to fetch now playing movies");
+    throw new Error("Failed to fetch movies");
   }
 };
 

@@ -8,7 +8,7 @@ interface Props {
 const MovieMenu: React.FC<Props> = ({ handleMouseLeave }) => {
   return (
     <nav
-      className="bg-white rounded-[10px] py-4 w-[136px] flex flex-col absolute right-[1rem] sm:right-[2rem] md:right-[4rem] top-[3rem] border bs-1"
+      className="bg-white rounded-[10px] py-4 w-[136px] flex flex-col absolute right-[1rem] sm:right-[2rem] md:right-[4rem] top-[3rem] border bs-1 z-10"
       onMouseLeave={handleMouseLeave}
     >
       <Link href={"/popular"} className="px-4 py-1  hover:bg-TMDB_Gray_1">

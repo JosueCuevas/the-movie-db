@@ -16,6 +16,7 @@ module.exports = {
         TMDB_Gray_2: "#666666",
         TMDB_Success: "#21C171",
         TMDB_Danger: "#D6225E",
+        TMDB_Mask: "rgba(30, 30, 30, 0.75)",
       },
     },
   },

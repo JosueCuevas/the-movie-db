@@ -2,9 +2,10 @@ import React from "react";
 
 interface Props {
   average: number;
+  className?: string;
 }
 
-const CircleProgressBar: React.FC<Props> = ({ average }) => {
+const CircleProgressBar: React.FC<Props> = ({ average, className }) => {
   let progressColor = "";
   if (average < 25 && average > 0) {
     progressColor = "text-TMDB_Danger";
@@ -14,7 +15,9 @@ const CircleProgressBar: React.FC<Props> = ({ average }) => {
     progressColor = "text-TMDB_Success";
   }
   return (
-    <section className="absolute top-[-28px] w-[50px] h-[50px] rounded-[50%] bg-TMDB_Blue_1 flex justify-center items-center">
+    <section
+      className={`${className} w-[50px] h-[50px] rounded-[50%] bg-TMDB_Blue_1 flex justify-center items-center`}
+    >
       <span className="text-white font-extrabold relative right-[1px]">
         {average} <span className="text-[8px] absolute top-1">%</span>
       </span>

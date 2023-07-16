@@ -33,7 +33,10 @@ const MovieCard: React.FC<Props> = ({ movie, genres }) => {
         />
       </Link>
       <div className="p-4 relative">
-        <CircleProgressBar average={movie.vote_average * 10} />
+        <CircleProgressBar
+          average={movie.vote_average * 10}
+          className="absolute top-[-28px]"
+        />
         <h3 className="text-[22px] font-bold leading-6 my-4">{movie.title}</h3>
         <p className="text-TMDB_Gray_2 mb-2">{`${movie.release_date}`}</p>
         <span className="text-TMDB_Blue_1">{movieGenres}</span>
